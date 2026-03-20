@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Portfolio</title>
+  <meta name="description" content="All my software projects — AWS, Web, AI/ML, Database, Socket and more." />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="projects">
+  <canvas id="bgCanvas"></canvas>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <div class="avatar-ring">
+        <div class="avatar"><span class="avatar-initials">MV</span></div>
+      </div>
+      <div class="brand-info">
+        <h2 class="brand-name">Meet Vaghasiya</h2>
+        <p class="brand-role">Software Developer <span class="cursor-blink">▋</span></p>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html"      class="nav-item" data-page="home">       <i class="fas fa-house-chimney nav-icon"></i><span>Home</span><div class="nav-indicator"></div></a>
+      <a href="education.html"  class="nav-item" data-page="education">  <i class="fas fa-graduation-cap nav-icon"></i><span>Education</span><div class="nav-indicator"></div></a>
+      <a href="experience.html" class="nav-item" data-page="experience"> <i class="fas fa-briefcase nav-icon"></i><span>Experience</span><div class="nav-indicator"></div></a>
+      <a href="projects.html"   class="nav-item" data-page="projects">   <i class="fas fa-code-branch nav-icon"></i><span>Projects</span><div class="nav-indicator"></div></a>
+      <a href="contact.html"    class="nav-item" data-page="contact">    <i class="fas fa-satellite-dish nav-icon"></i><span>Connect</span><div class="nav-indicator"></div></a>
+    </nav>
+    <div class="sidebar-footer">
+      <a href="https://github.com/Meet734" target="_blank" class="sf-icon" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/meet-vaghasiya9/" target="_blank" class="sf-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:meetvaghasiya734@gmail.com" class="sf-icon" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content">
+    <div class="page-wrapper">
+
+      <div class="section-header">
+        <div class="section-badge"><i class="fas fa-code-branch"></i> Projects</div>
+        <h1 class="section-title">My <span class="gradient-text">Projects</span></h1>
+        <p class="section-subtitle">A curated collection of ideas built into production-ready software. Hover a card to see details.</p>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar" role="group" aria-label="Filter projects by technology">
+        <button class="filter-btn active" data-filter="all"><i class="fas fa-layer-group"></i> All</button>
+        <button class="filter-btn" data-filter="aws"><i class="fab fa-aws"></i> AWS</button>
+        <button class="filter-btn" data-filter="database"><i class="fas fa-database"></i> Database</button>
+        <button class="filter-btn" data-filter="web"><i class="fas fa-globe"></i> Web App</button>
+        <button class="filter-btn" data-filter="socket"><i class="fas fa-plug"></i> Socket</button>
+        <button class="filter-btn" data-filter="ai"><i class="fas fa-brain"></i> AI / ML</button>
+        <button class="filter-btn" data-filter="python"><i class="fab fa-python"></i> Python</button>
+        <button class="filter-btn" data-filter="java"><i class="fab fa-java"></i> Java</button>
+      </div>
+
+      <p class="projects-count">Showing <span id="projectCount">4</span> projects</p>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card" data-tags="socket,ai,web">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <div class="project-glow"></div>
+              <div class="project-header">
+                <div class="project-icon-wrap" style="background:linear-gradient(135deg,#7c3aed,#06b6d4)">
+                  <i class="fas fa-chess-knight"></i>
+                </div>
+                <div class="project-tag-chips">
+                  <span class="chip sock">Socket</span>
+                  <span class="chip ai">AI</span>
+                  <span class="chip web">Web</span>
+                </div>
+              </div>
+              <h2 class="project-name">Multiplayer Chess Game</h2>
+              <p class="project-short">Multiplayer chess with WebSocket real-time play, Minimax AI opponent with alpha-beta pruning, and a premium dark UI.</p>
+              <div class="project-tech-row">
+                <span class="ptag">Node.js</span>
+                <span class="ptag">Socket.io</span>
+                <span class="ptag">JavaScript</span>
+                <span class="ptag">Minimax AI</span>
+              </div>
+            </div>
+            <div class="project-card-back">
+              <h4><i class="fas fa-info-circle"></i> About</h4>
+              <p>Full-featured chess app with local, online multiplayer (WebSockets room-based), and AI modes. Minimax + alpha-beta pruning at configurable depth levels. Premium dark-themed UI with smooth move animations.</p>
+              <div class="project-links">
+                <a href="https://github.com/Meet734/Chess" class="plink github" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- E-Commerce -->
+        <div class="project-card" data-tags="web,database">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <div class="project-glow"></div>
+              <div class="project-header">
+                <div class="project-icon-wrap" style="background:linear-gradient(135deg,#e11d48,#f97316)">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="project-tag-chips">
+                  <span class="chip web">Web</span>
+                  <span class="chip db">Database</span>
+                </div>
+              </div>
+              <h2 class="project-name">E-Commerce Platform</h2>
+              <p class="project-short">A fully functional e-commerce web application with smart search, user recommendations, and vendor sales analytics.</p>
+              <div class="project-tech-row">
+                <span class="ptag">React</span>
+                <span class="ptag">Express.js</span>
+                <span class="ptag">MongoDB</span>
+                <span class="ptag">AWS S3</span>
+              </div>
+            </div>
+            <div class="project-card-back">
+              <h4><i class="fas fa-info-circle"></i> About</h4>
+              <p>A full functional web application focused on user authorization, item purchasing, vendor functionalities, and robust cart execution. Features a smart search tool with suggestions, user-specific product recommendations, and detailed sales analytics tools for vendors.</p>
+              <div class="project-links">
+                <a href="#" class="plink github" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GovServe -->
+        <div class="project-card" data-tags="web,database">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <div class="project-glow"></div>
+              <div class="project-header">
+                <div class="project-icon-wrap" style="background:linear-gradient(135deg,#10b981,#059669)">
+                  <i class="fas fa-landmark"></i>
+                </div>
+                <div class="project-tag-chips">
+                  <span class="chip web">Web</span>
+                  <span class="chip db">Database</span>
+                </div>
+              </div>
+              <h2 class="project-name">GovServe</h2>
+              <p class="project-short">A seamless, web-based government complaint management service built to modernize real-time issue tracking.</p>
+              <div class="project-tech-row">
+                <span class="ptag">Node.js</span>
+                <span class="ptag">Express.js</span>
+                <span class="ptag">PostgreSQL</span>
+              </div>
+            </div>
+            <div class="project-card-back">
+              <h4><i class="fas fa-info-circle"></i> About</h4>
+              <p>A web-based government complaint management system architected with robust relational databases to track, manage, and scale real-time user-reported issues. Implements event-driven communication and secure authorization schemas.</p>
+              <div class="project-links">
+                <a href="#" class="plink github" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OptiFlow -->
+        <div class="project-card" data-tags="python,database">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <div class="project-glow"></div>
+              <div class="project-header">
+                <div class="project-icon-wrap" style="background:linear-gradient(135deg,#0ea5e9,#6366f1)">
+                  <i class="fas fa-server"></i>
+                </div>
+                <div class="project-tag-chips">
+                  <span class="chip py">Python</span>
+                  <span class="chip db">Database</span>
+                </div>
+              </div>
+              <h2 class="project-name">OptiFlow</h2>
+              <p class="project-short">Scalable compute-cluster engine handling 200k+ daily jobs, reducing resource starvation by 35% with custom priority queues.</p>
+              <div class="project-tech-row">
+                <span class="ptag">Python</span>
+                <span class="ptag">FastAPI</span>
+                <span class="ptag">Redis</span>
+                <span class="ptag">Docker</span>
+              </div>
+            </div>
+            <div class="project-card-back">
+              <h4><i class="fas fa-info-circle"></i> About</h4>
+              <p>Scalable compute-cluster engine engineered to process 200k+ daily jobs. Reduced resource starvation by 35% using weighted priority queues and intelligent, algorithmic custom load balancing. Deployed via Docker and orchestrated with PyTest integrity.</p>
+              <div class="project-links">
+                <a href="#" class="plink github" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /projects-grid -->
+
+      <div class="projects-empty" id="projectsEmpty" style="display:none;">
+        <i class="fas fa-folder-open"></i>
+        <p>No projects match this filter.</p>
+      </div>
+
+    </div><!-- /page-wrapper -->
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

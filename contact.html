@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connect | Portfolio</title>
+  <meta name="description" content="Get in touch — phone, email, LinkedIn, GitHub and other social profiles." />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="contact">
+  <canvas id="bgCanvas"></canvas>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <div class="avatar-ring">
+        <div class="avatar"><span class="avatar-initials">MV</span></div>
+      </div>
+      <div class="brand-info">
+        <h2 class="brand-name">Meet Vaghasiya</h2>
+        <p class="brand-role">Software Developer <span class="cursor-blink">▋</span></p>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html"      class="nav-item" data-page="home">       <i class="fas fa-house-chimney nav-icon"></i><span>Home</span><div class="nav-indicator"></div></a>
+      <a href="education.html"  class="nav-item" data-page="education">  <i class="fas fa-graduation-cap nav-icon"></i><span>Education</span><div class="nav-indicator"></div></a>
+      <a href="experience.html" class="nav-item" data-page="experience"> <i class="fas fa-briefcase nav-icon"></i><span>Experience</span><div class="nav-indicator"></div></a>
+      <a href="projects.html"   class="nav-item" data-page="projects">   <i class="fas fa-code-branch nav-icon"></i><span>Projects</span><div class="nav-indicator"></div></a>
+      <a href="contact.html"    class="nav-item" data-page="contact">    <i class="fas fa-satellite-dish nav-icon"></i><span>Connect</span><div class="nav-indicator"></div></a>
+    </nav>
+    <div class="sidebar-footer">
+      <a href="https://github.com/Meet734" target="_blank" class="sf-icon" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/meet-vaghasiya9/" target="_blank" class="sf-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:meetvaghasiya734@gmail.com" class="sf-icon" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content">
+    <div class="page-wrapper">
+
+      <div class="section-header">
+        <div class="section-badge"><i class="fas fa-satellite-dish"></i> Connect</div>
+        <h1 class="section-title">Let's <span class="gradient-text">Connect</span></h1>
+        <p class="section-subtitle">Open to opportunities, collaborations, open-source contributions, and interesting conversations.</p>
+      </div>
+
+      <div class="contact-container">
+
+        <!-- Left: contact links -->
+        <div class="contact-left">
+          <div class="contact-intro">
+            <div class="terminal-line">
+              <span class="t-prompt">$</span>
+              <span class="t-cmd">echo "Available for hire"</span>
+            </div>
+            <div class="terminal-output">✔ Available for hire</div>
+            <div class="terminal-line">
+              <span class="t-prompt">$</span>
+              <span class="t-cmd">cat contact.txt</span>
+            </div>
+          </div>
+
+          <div class="contact-cards">
+
+            <a href="tel:+919737769897" class="contact-card">
+              <div class="contact-card-icon phone"><i class="fas fa-phone-alt"></i></div>
+              <div class="contact-card-info">
+                <h3>Phone</h3>
+                <p>+91 97377 69897</p>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+
+            <a href="mailto:meetvaghasiya734@gmail.com" class="contact-card">
+              <div class="contact-card-icon email"><i class="fas fa-envelope"></i></div>
+              <div class="contact-card-info">
+                <h3>Email</h3>
+                <p>meetvaghasiya734@gmail.com</p>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/meet-vaghasiya9/" target="_blank" rel="noopener" class="contact-card">
+              <div class="contact-card-icon linkedin"><i class="fab fa-linkedin-in"></i></div>
+              <div class="contact-card-info">
+                <h3>LinkedIn</h3>
+                <p>linkedin.com/in/meet-vaghasiya9/</p>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+
+            <a href="https://github.com/Meet734" target="_blank" rel="noopener" class="contact-card">
+              <div class="contact-card-icon github"><i class="fab fa-github"></i></div>
+              <div class="contact-card-info">
+                <h3>GitHub</h3>
+                <p>github.com/Meet734</p>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+
+            <a href="https://x.com/Meet734" target="_blank" rel="noopener" class="contact-card">
+              <div class="contact-card-icon twitter"><i class="fab fa-x-twitter"></i></div>
+              <div class="contact-card-info">
+                <h3>X (Twitter)</h3>
+                <p>@Meet734</p>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+
+            <a href="https://codeforces.com/profile/meetvaghasiya734" target="_blank" rel="noopener" class="contact-card">
+              <div class="contact-card-icon leetcode"><i class="fas fa-chart-line"></i></div>
+              <div class="contact-card-info">
+                <h3>Codeforces</h3>
+                <p>codeforces.com/profile/meetvaghasiya734</p>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+
+
+
+          </div>
+        </div>
+
+        <!-- Right: Message form -->
+        <div class="contact-right">
+          <div class="message-form-card">
+            <h2 class="form-title"><i class="fas fa-paper-plane"></i> Send a Message</h2>
+            <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="fc8a72fc-2e84-4660-9fc2-ab3e742af92b" />
+              <input type="hidden" name="subject" value="Portfolio Contact: New Message" />
+              <input type="hidden" name="redirect" value="false" />
+              <div class="form-group">
+                <label for="senderName">Name</label>
+                <div class="input-wrap">
+                  <i class="fas fa-user input-icon"></i>
+                  <input type="text" id="senderName" name="name" placeholder="Your full name" required autocomplete="name" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="senderEmail">Email</label>
+                <div class="input-wrap">
+                  <i class="fas fa-envelope input-icon"></i>
+                  <input type="email" id="senderEmail" name="email" placeholder="your@email.com" required autocomplete="email" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="senderSubject">Subject</label>
+                <div class="input-wrap">
+                  <i class="fas fa-tag input-icon"></i>
+                  <input type="text" id="senderSubject" name="subject" placeholder="Project inquiry, collaboration…" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="senderMessage">Message</label>
+                <div class="input-wrap textarea-wrap">
+                  <i class="fas fa-comment-dots input-icon"></i>
+                  <textarea id="senderMessage" name="message" rows="5" placeholder="Tell me about your project or opportunity…" required></textarea>
+                </div>
+              </div>
+              <button type="submit" class="form-submit" id="formSubmitBtn">
+                <i class="fas fa-paper-plane"></i>
+                <span>Send Message</span>
+              </button>
+              <div class="form-success" id="formSuccess">
+                <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div><!-- /contact-container -->
+    </div><!-- /page-wrapper -->
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

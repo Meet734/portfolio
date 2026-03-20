@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Software Developer</title>
+  <meta name="description" content="Professional portfolio of a passionate software developer. Explore my projects, experience, and education." />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="home">
+  <canvas id="bgCanvas"></canvas>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <div class="avatar-ring">
+        <div class="avatar"><span class="avatar-initials">MV</span></div>
+      </div>
+      <div class="brand-info">
+        <h2 class="brand-name">Meet Vaghasiya</h2>
+        <p class="brand-role">Software Developer <span class="cursor-blink">▋</span></p>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html"      class="nav-item active" data-page="home">       <i class="fas fa-house-chimney nav-icon"></i><span>Home</span><div class="nav-indicator"></div></a>
+      <a href="education.html"  class="nav-item"         data-page="education">  <i class="fas fa-graduation-cap nav-icon"></i><span>Education</span><div class="nav-indicator"></div></a>
+      <a href="experience.html" class="nav-item"         data-page="experience"> <i class="fas fa-briefcase nav-icon"></i><span>Experience</span><div class="nav-indicator"></div></a>
+      <a href="projects.html"   class="nav-item"         data-page="projects">   <i class="fas fa-code-branch nav-icon"></i><span>Projects</span><div class="nav-indicator"></div></a>
+      <a href="contact.html"    class="nav-item"         data-page="contact">    <i class="fas fa-satellite-dish nav-icon"></i><span>Connect</span><div class="nav-indicator"></div></a>
+    </nav>
+    <div class="sidebar-footer">
+      <a href="https://github.com/Meet734" target="_blank" class="sf-icon" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/meet-vaghasiya9/" target="_blank" class="sf-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:meetvaghasiya734@gmail.com" class="sf-icon" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content">
+    <div class="home-container">
+
+      <div class="home-left">
+        <div class="terminal-badge">
+          <span class="t-dot red"></span><span class="t-dot yellow"></span><span class="t-dot green"></span>
+          <span class="t-prompt">~/portfolio</span>&nbsp;<span class="t-cmd">$ whoami</span>
+        </div>
+        <h1 class="home-title">Hi, I'm <span class="gradient-text">Meet Vaghasiya</span></h1>
+        <div class="typewriter-wrapper">
+          <span class="tw-prefix">I build </span>
+          <span class="tw-text" id="typewriterText"></span>
+          <span class="tw-cursor">|</span>
+        </div>
+        <p class="home-bio">
+          A passionate software developer crafting elegant solutions to complex problems.
+          From cloud-native applications on AWS to AI-powered pipelines — I turn ideas into
+          scalable, production-ready software.
+        </p>
+        <div class="home-actions">
+          <a href="projects.html" class="btn-primary"><i class="fas fa-rocket"></i> View Projects</a>
+          <a href="contact.html"  class="btn-secondary"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+          <a href="https://drive.google.com/file/d/1Kl_mVsQT-PRzJcY7W43QjVyG_XB99b13/view?usp=sharing"    class="btn-ghost" target="_blank"><i class="fas fa-file-code"></i> Resume</a>
+        </div>
+        <div class="home-stats expertise-pillars">
+          <div class="stat-card pillar-card">
+            <div class="stat-header">
+              <i class="fas fa-server"></i>
+              <span class="stat-ok">ARCHITECTURE</span>
+            </div>
+            <div class="stat-main">
+              <span class="pillar-title">Scalable Backend</span>
+              <span class="stat-label">Architecting robust REST APIs & Microservices</span>
+            </div>
+          </div>
+          <div class="stat-card pillar-card">
+            <div class="stat-header">
+              <i class="fas fa-cloud-code"></i>
+              <span class="stat-ok">INFRASTRUCTURE</span>
+            </div>
+            <div class="stat-main">
+              <span class="pillar-title">Cloud Native</span>
+              <span class="stat-label">Deploying resilient solutions on AWS cloud</span>
+            </div>
+          </div>
+          <div class="stat-card pillar-card">
+            <div class="stat-header">
+              <i class="fas fa-database"></i>
+              <span class="stat-ok">FOUNDRY</span>
+            </div>
+            <div class="stat-main">
+              <span class="pillar-title">Data Engineering</span>
+              <span class="stat-label">Optimizing SQL/NoSQL & Data Pipelines</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-right">
+        <div class="code-card">
+          <div class="code-card-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="code-filename">developer.json</span>
+          </div>
+          <pre class="code-body"><code><span class="c-brace">{</span>
+  <span class="c-key">"name"</span><span class="c-colon">:</span>      <span class="c-str">"Meet Vaghasiya"</span><span class="c-comma">,</span>
+  <span class="c-key">"role"</span><span class="c-colon">:</span>      <span class="c-str">"Software Developer"</span><span class="c-comma">,</span>
+  <span class="c-key">"education"</span><span class="c-colon">:</span> <span class="c-str">"M.Tech ICT"</span><span class="c-comma">,</span>
+  <span class="c-key">"skills"</span><span class="c-colon">:</span>   <span class="c-brace">[</span>
+    <span class="c-str">"Node.js"</span><span class="c-comma">,</span> <span class="c-str">"Express.js"</span><span class="c-comma">,</span>
+    <span class="c-str">"C++"</span><span class="c-comma">,</span>     <span class="c-str">"Python"</span><span class="c-comma">,</span>
+    <span class="c-str">"MongoDB"</span><span class="c-comma">,</span> <span class="c-str">"AWS"</span>
+  <span class="c-brace">]</span><span class="c-comma">,</span>
+  <span class="c-key">"passion"</span><span class="c-colon">:</span>  <span class="c-str">"Impactful software"</span><span class="c-comma">,</span>
+  <span class="c-key">"available"</span><span class="c-colon">:</span> <span class="c-bool">true</span>
+<span class="c-brace">}</span></code></pre>
+        </div>
+        <div class="orbit-container">
+          <div class="orbit-ring"></div>
+          <div class="orbit-item" style="--i:0"><i class="fab fa-python"></i></div>
+          <div class="orbit-item" style="--i:1"><i class="fab fa-aws"></i></div>
+          <div class="orbit-item" style="--i:2"><i class="fab fa-react"></i></div>
+          <div class="orbit-item" style="--i:3"><i class="fab fa-node-js"></i></div>
+          <div class="orbit-item" style="--i:4"><i class="fas fa-database"></i></div>
+          <div class="orbit-item" style="--i:5"><i class="fab fa-java"></i></div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

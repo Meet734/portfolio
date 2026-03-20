@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience | Portfolio</title>
+  <meta name="description" content="My professional internship experience, contributions, and technical skills." />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="experience">
+  <canvas id="bgCanvas"></canvas>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <div class="avatar-ring">
+        <div class="avatar"><span class="avatar-initials">MV</span></div>
+      </div>
+      <div class="brand-info">
+        <h2 class="brand-name">Meet Vaghasiya</h2>
+        <p class="brand-role">Software Developer <span class="cursor-blink">▋</span></p>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html"      class="nav-item" data-page="home">       <i class="fas fa-house-chimney nav-icon"></i><span>Home</span><div class="nav-indicator"></div></a>
+      <a href="education.html"  class="nav-item" data-page="education">  <i class="fas fa-graduation-cap nav-icon"></i><span>Education</span><div class="nav-indicator"></div></a>
+      <a href="experience.html" class="nav-item" data-page="experience"> <i class="fas fa-briefcase nav-icon"></i><span>Experience</span><div class="nav-indicator"></div></a>
+      <a href="projects.html"   class="nav-item" data-page="projects">   <i class="fas fa-code-branch nav-icon"></i><span>Projects</span><div class="nav-indicator"></div></a>
+      <a href="contact.html"    class="nav-item" data-page="contact">    <i class="fas fa-satellite-dish nav-icon"></i><span>Connect</span><div class="nav-indicator"></div></a>
+    </nav>
+    <div class="sidebar-footer">
+      <a href="https://github.com/Meet734" target="_blank" class="sf-icon" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/meet-vaghasiya9/" target="_blank" class="sf-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:meetvaghasiya734@gmail.com" class="sf-icon" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content">
+    <div class="page-wrapper">
+
+      <div class="section-header">
+        <div class="section-badge"><i class="fas fa-briefcase"></i> Experience</div>
+        <h1 class="section-title">Professional <span class="gradient-text">Experience</span></h1>
+        <p class="section-subtitle">Real-world impact through internships and collaborative software development</p>
+      </div>
+
+      <div class="exp-container">
+
+        <!-- Internship Card -->
+        <div class="exp-card featured">
+          <div class="exp-card-header">
+            <div class="exp-company-logo"><i class="fas fa-building"></i></div>
+            <div class="exp-header-info">
+              <h2 class="exp-role">Web Developer Intern</h2>
+              <p class="exp-company">Yudiz Solutions Ltd.</p>
+              <div class="exp-meta-row">
+                <span><i class="fas fa-calendar-alt"></i> Jan 2025 – Jun 2025 · 6 months</span>
+                <span><i class="fas fa-map-marker-alt"></i> Ahmedabad · On-site, Full-time</span>
+              </div>
+            </div>
+            <div class="exp-type full-time">Full-Time</div>
+          </div>
+          <div class="exp-card-body">
+            <p class="exp-summary">
+              Working as a Full-time Web Developer Intern, actively contributing to backend development, REST API engineering, 
+              and robust database architectures for scalable web applications at Yudiz Solutions Ltd.
+            </p>
+
+            <div class="exp-contributions">
+              <h3><i class="fas fa-terminal"></i> Key Contributions</h3>
+              <ul class="contribution-list">
+                <li>
+                  <span class="bullet-icon"><i class="fas fa-check-circle"></i></span>
+                  <div class="contribution-text">
+                    <strong>REST API for Dynamic URLs Management:</strong> Contributed to the development of a Dynamic URLs management server capable of shortening URLs, generating dynamic URLs, and tracking granular URL analytics.
+                  </div>
+                </li>
+                <li>
+                  <span class="bullet-icon"><i class="fas fa-check-circle"></i></span>
+                  <div class="contribution-text">
+                    <strong>Crown Master:</strong> Contributed to the backend with dynamic puzzle generation, multi-language support, AI integration, and secure REST API infrastructure.
+                  </div>
+                </li>
+                <li>
+                  <span class="bullet-icon"><i class="fas fa-check-circle"></i></span>
+                  <div class="contribution-text">
+                    <strong>Database &amp; ODM:</strong> Engineered SQL and NoSQL database architectures using ORM and ODM frameworks (Mongoose).
+                  </div>
+                </li>
+                <li>
+                  <span class="bullet-icon"><i class="fas fa-check-circle"></i></span>
+                  <div class="contribution-text">
+                    Applied logical problem-solving to optimize database performance, build robust scalable data models, and ensure data integrity across applications.
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="exp-tech-stack">
+              <h3><i class="fas fa-layer-group"></i> Tech Stack Used</h3>
+              <div class="tech-pills">
+                <span class="tech-pill"><i class="fab fa-node-js"></i> Node.js</span>
+                <span class="tech-pill"><i class="fas fa-server"></i> Express.js</span>
+                <span class="tech-pill"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="tech-pill"><i class="fas fa-database"></i> MongoDB / Mongoose</span>
+                <span class="tech-pill"><i class="fab fa-aws"></i> AWS</span>
+                <span class="tech-pill"><i class="fab fa-git-alt"></i> Git / GitHub</span>
+                <span class="tech-pill"><i class="fab fa-docker"></i> Docker</span>
+                <span class="tech-pill"><i class="fas fa-database"></i> SQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div><!-- /exp-container -->
+    </div><!-- /page-wrapper -->
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education | Portfolio</title>
+  <meta name="description" content="My academic journey — M.Tech, B.E, HSC, SSC and certifications." />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-page="education">
+  <canvas id="bgCanvas"></canvas>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <div class="avatar-ring">
+        <div class="avatar"><span class="avatar-initials">MV</span></div>
+      </div>
+      <div class="brand-info">
+        <h2 class="brand-name">Meet Vaghasiya</h2>
+        <p class="brand-role">Software Developer <span class="cursor-blink">▋</span></p>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html" class="nav-item" data-page="home"> <i
+          class="fas fa-house-chimney nav-icon"></i><span>Home</span>
+        <div class="nav-indicator"></div>
+      </a>
+      <a href="education.html" class="nav-item" data-page="education"> <i
+          class="fas fa-graduation-cap nav-icon"></i><span>Education</span>
+        <div class="nav-indicator"></div>
+      </a>
+      <a href="experience.html" class="nav-item" data-page="experience"> <i
+          class="fas fa-briefcase nav-icon"></i><span>Experience</span>
+        <div class="nav-indicator"></div>
+      </a>
+      <a href="projects.html" class="nav-item" data-page="projects"> <i
+          class="fas fa-code-branch nav-icon"></i><span>Projects</span>
+        <div class="nav-indicator"></div>
+      </a>
+      <a href="contact.html" class="nav-item" data-page="contact"> <i
+          class="fas fa-satellite-dish nav-icon"></i><span>Connect</span>
+        <div class="nav-indicator"></div>
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <a href="https://github.com/Meet734" target="_blank" class="sf-icon" title="GitHub"><i
+          class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/meet-vaghasiya9/" target="_blank" class="sf-icon" title="LinkedIn"><i
+          class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:meetvaghasiya734@gmail.com" class="sf-icon" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content">
+    <div class="page-wrapper">
+
+      <div class="section-header">
+        <div class="section-badge"><i class="fas fa-graduation-cap"></i> Education</div>
+        <h1 class="section-title">Academic <span class="gradient-text">Journey</span></h1>
+        <p class="section-subtitle">A chronicle of my formal education and professional certifications</p>
+      </div>
+
+      <!-- Timeline -->
+      <div class="edu-timeline">
+
+        <!-- M.Tech -->
+        <div class="edu-card">
+          <div class="edu-card-left">
+            <div class="edu-icon-wrap grad-purple"><i class="fas fa-university"></i></div>
+            <div class="edu-connector"></div>
+          </div>
+          <div class="edu-card-body">
+            <div class="edu-meta">
+              <span class="edu-year">2025 – 2027</span>
+              <span class="edu-badge">M.Tech ICT</span>
+            </div>
+            <h2 class="edu-degree">Master of Technology — Information and Communication Technology</h2>
+            <p class="edu-institution"><i class="fas fa-building-columns"></i> Dhirubhai Ambani Institute of Information
+              and Communication Technology, Gandhinagar</p>
+            <p class="edu-desc">
+              Specialized in <strong>Software Systems</strong>.
+              Core subjects: Cloud Computing, Advance Algorithms, Distributed Databases, Advance Software Engineering,
+              GenAI.
+              CGPA: <span class="highlight">7.83 / 10</span>
+            </p>
+            <div class="edu-tags">
+              <span class="tag">Cloud Computing</span>
+              <span class="tag">GenAI</span>
+              <span class="tag">Distributed Databases</span>
+              <span class="tag">Algorithms</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- B.E -->
+        <div class="edu-card">
+          <div class="edu-card-left">
+            <div class="edu-icon-wrap grad-blue"><i class="fas fa-laptop-code"></i></div>
+            <div class="edu-connector"></div>
+          </div>
+          <div class="edu-card-body">
+            <div class="edu-meta">
+              <span class="edu-year">2021 – 2025</span>
+              <span class="edu-badge be">B.E CE</span>
+            </div>
+            <h2 class="edu-degree">Bachelor of Engineering — Computer Engineering</h2>
+            <p class="edu-institution"><i class="fas fa-building-columns"></i> Government Engineering College, Bhavnagar
+            </p>
+            <p class="edu-desc">
+              Core subjects: Data Structures, Software Engineering, DBMS, OOP, Computer Organization and Architecture,
+              Machine Learning, C programming.
+              CGPA: <span class="highlight">7.95 / 10</span>
+            </p>
+            <div class="edu-tags">
+              <span class="tag">Data Structures</span>
+              <span class="tag">OOP</span>
+              <span class="tag">DBMS</span>
+              <span class="tag">Machine Learning</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- HSC -->
+        <div class="edu-card">
+          <div class="edu-card-left">
+            <div class="edu-icon-wrap grad-teal"><i class="fas fa-school"></i></div>
+          </div>
+          <div class="edu-card-body">
+            <div class="edu-meta">
+              <span class="edu-year">2019 – 2021</span>
+              <span class="edu-badge hsc">12th Science</span>
+            </div>
+            <h2 class="edu-degree">Higher Secondary Certificate — Science</h2>
+            <p class="edu-institution"><i class="fas fa-building-columns"></i> Smt. R.C. Patel Higher Secondary School,
+              Gandhinagar</p>
+            <p class="edu-desc">
+              Studied Physics, Chemistry, Mathematics.
+              Percentage: <span class="highlight">89%</span>
+            </p>
+            <div class="edu-tags">
+              <span class="tag">Mathematics</span>
+              <span class="tag">Physics</span>
+              <span class="tag">Chemistry</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="cert-section">
+        <h3 class="cert-title"><i class="fas fa-certificate"></i> Certifications &amp; Courses</h3>
+        <div class="cert-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card">
+            <div class="cert-icon web"><i class="fab fa-node-js"></i></div>
+            <div class="cert-info">
+              <h4>Web Development in Node.js</h4>
+              <p>Coursera</p>
+            </div>
+            <a href="https://coursera.org/share/2db6fca5ee778c8a2e1720853bdc5efc" target="_blank" class="cert-link"
+              title="View Certificate"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <!-- Cert 2 -->
+          <div class="cert-card">
+            <div class="cert-icon java"><i class="fab fa-java"></i></div>
+            <div class="cert-info">
+              <h4>Object-Oriented Programming with Java</h4>
+              <p>Coursera</p>
+            </div>
+            <a href="https://coursera.org/share/c735b3439cbee16ca04ce9395d958ac8" target="_blank" class="cert-link"
+              title="View Certificate"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <!-- Cert 3 -->
+          <div class="cert-card">
+            <div class="cert-icon aws"><i class="fas fa-cloud"></i></div>
+            <div class="cert-info">
+              <h4>Introduction to Cloud Computing</h4>
+              <p>Coursera / IBM</p>
+            </div>
+            <a href="https://coursera.org/share/cab6f76af1bcc3d52dc5493ef38c9f60" target="_blank" class="cert-link"
+              title="View Certificate"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <!-- Cert 4 -->
+          <div class="cert-card">
+            <div class="cert-icon web"><i class="fas fa-server"></i></div>
+            <div class="cert-info">
+              <h4>APIs in Node.js</h4>
+              <p>Coursera</p>
+            </div>
+            <a href="https://coursera.org/share/3e71e15fa5c31ab1f66e47cf2867d9b9" target="_blank" class="cert-link"
+              title="View Certificate"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <!-- Cert 5 -->
+          <div class="cert-card">
+            <div class="cert-icon web"><i class="fab fa-html5"></i></div>
+            <div class="cert-info">
+              <h4>Introduction to HTML5</h4>
+              <p>Coursera / UMich</p>
+            </div>
+            <a href="https://coursera.org/share/63eed5de0bb92732e4a732277a276c71" target="_blank" class="cert-link"
+              title="View Certificate"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <!-- Cert 6 -->
+          <div class="cert-card">
+            <div class="cert-icon db"><i class="fas fa-chart-bar"></i></div>
+            <div class="cert-info">
+              <h4>What is Data Science?</h4>
+              <p>Coursera / IBM</p>
+            </div>
+            <a href="https://coursera.org/share/c975903a924235278a9bb031e1e6f54c" target="_blank" class="cert-link"
+              title="View Certificate"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <!-- Cert 7 -->
+          <div class="cert-card">
+            <div class="cert-icon python"><i class="fab fa-python"></i></div>
+            <div class="cert-info">
+              <h4>Get Started with Python</h4>
+              <p>Coursera / Google</p>
+            </div>
+            <a href="https://coursera.org/share/48cac04458cee80e4178353adfb5d984" target="_blank" class="cert-link"
+              title="View Certificate"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <!-- Cert 8 -->
+          <div class="cert-card">
+            <div class="cert-icon python"><i class="fas fa-code"></i></div>
+            <div class="cert-info">
+              <h4>C for Everyone, Part 1</h4>
+              <p>Coursera / UCSC</p>
+            </div>
+            <a href="https://coursera.org/share/a94d6df74058737fb7e4384d51c6185b" target="_blank" class="cert-link"
+              title="View Certificate"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /page-wrapper -->
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
