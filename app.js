@@ -100,6 +100,25 @@
   document.querySelectorAll('.nav-item').forEach(l => l.addEventListener('click', close));
 })();
 
+// ---------- VISITOR COUNT ----------
+(async function visitorCounter() {
+  const countEl = document.getElementById('visitorCount');
+  if (!countEl) return;
+
+  const fallback = 1091;
+  try {
+    const res = await fetch('/api/visit', { cache: 'no-store' });
+    if (!res.ok) throw new Error('Counter unavailable');
+    const data = await res.json();
+    const count = Number(data.count);
+    countEl.textContent = Number.isFinite(count)
+      ? count.toLocaleString('en-US')
+      : String(fallback);
+  } catch (err) {
+    countEl.textContent = String(fallback);
+  }
+})();
+
 // ---------- TYPEWRITER (Home only) ----------
 (function typewriter() {
   const el = document.getElementById('typewriterText');

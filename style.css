@@ -126,6 +126,9 @@ a { text-decoration: none; color: inherit; }
 
 .sidebar-footer {
   padding: 16px 20px; border-top: 1px solid var(--border);
+  display: flex; flex-direction: column; gap: 12px; align-items: center;
+}
+.sf-icons {
   display: flex; gap: 12px; justify-content: center;
 }
 .sf-icon {
@@ -136,6 +139,16 @@ a { text-decoration: none; color: inherit; }
   transition: all var(--transition);
 }
 .sf-icon:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-2px); }
+
+.visitor-count {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 10px; border-radius: 10px;
+  background: var(--surface2); border: 1px solid var(--border);
+  color: var(--muted2); font-size: 12px;
+  font-family: 'JetBrains Mono', monospace;
+}
+.visitor-count i { color: var(--accent); font-size: 12px; }
+.visitor-number { color: var(--text); font-weight: 600; }
 
 /* ---------- HAMBURGER (mobile) ---------- */
 .hamburger {
